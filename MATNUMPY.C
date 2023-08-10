@@ -1,0 +1,22 @@
+void main()
+{
+  int i,j,n=5,t;
+  clrscr();
+  for(i=1;i<=n;i++)
+  {
+    for(j=n-i;j>=1;j--)
+    printf(" ");
+    t=1;
+    for(j=1;j<i*2;j++)
+    {
+      printf("%c",j<i?t++:t--);
+
+
+    }
+    printf("\n");
+
+  }
+
+	  getch();
+
+}
