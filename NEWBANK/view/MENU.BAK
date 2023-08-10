@@ -1,0 +1,116 @@
+//#include "NEWBANK\lib\COMLIB.C"
+
+//base menu
+
+void basemenu(){
+
+	clrscr();
+	newLine(1);
+  printf("\033[1;31m");
+  printf("%44.10s%41.5s%45.10s","Welcome\n","To\n","LENA BANK\n");
+  lineDesigne();
+  newLine(1); 
+ }
+
+//registration menu
+void registrationMenu()
+{
+
+  printf("%46.20s","Registration");
+ newLine(4);
+  printf("\033[1;37m");
+  printf("%29.20s %29.20s","1. User","2. Banker");
+  newLine(5);
+  printf("%54.30s","Already have an account..");
+  newLine(2);
+  printf("\033[1;36m");
+  printf("%50.20s","Press 3. for Login");
+  newLine(2);
+  printf("%72.10s","4. Exit");
+}
+
+// User Dashboard Menu
+
+void userDashboardMenu()
+{
+  clrscr();
+   printf("\033[1;37m");
+   printf("%48.19s%46.15s","Welcome :)\n\n","User\n\n\n");
+ printf("\033[1;36m");
+   printf("%49.22s","OUR SERVICES\n");
+   lineDesigne();
+   printf("\033[1;37m");   //white
+   newLine(2);
+   printf("%35.30s","1. Transfer Money");
+   printf("%31.20s","2. View Balance\n\n");
+   printf("%35.30s","3. Mini Statement");
+   printf("%33.20s","4. Update Profile\n\n");
+   printf("%27.30s","5. Logout");
+   printf("%32.20s","6. EXIT\n\n\n");
+   printf("\033[0m");    //grey
+   printf("%50.20s","Press to continue");
+}
+//user Transfer Menu
+void userTransferMenu()
+{
+      clrscr();
+   printf("\033[1;36m");
+   newLine(3);
+   printf("%49.20s","Transfer Money\n");
+     lineDesigne();
+   newLine(4);
+   printf("\033[1;37m");
+   printf("%35.20s","1. Quick Transfer");
+   printf("%32.20s","2. Add Beneficiery");
+}
+
+//bank Dashboard menu
+int  bankDashboardMenu()
+{
+   clrscr();
+   printf("\033[1;304m");
+   printf("%48.19s%47.15s","Welcome :)\n\n","Banker\n\n\n");
+   printf("\033[1;36m");
+   printf("%49.22s","OUR SERVICES\n");
+   lineDesigne();
+   printf("\033[1;37m");   //white
+   newLine(2);
+   printf("%35.30s","1. Create Account");
+   printf("%27.20s","2. Deposit\n\n");
+   printf("%31.30s","3. Withdrawal");
+   printf("%36.20s","4. View Balance\n\n");
+   printf("%27.30s","5. Logout");
+   printf("%53.30s","6. Registration Pending List\n\n");
+   printf("%28.20s","7. EXIT\n\n\n");
+   printf("\033[0m");    //grey
+   printf("%50.20s","Press to continue");
+ }
+// user pending list menu
+
+ void pendingListMenu()
+ {
+   
+     clrscr();
+   printf("\033[1;36m");
+   newLine(3);
+   printf("%49.20s","User Pending List\n");
+     lineDesigne();
+   newLine(4);
+   printf("\033[1;37m");
+   printf("%35.20s","1. View Pending Users");
+   printf("%32.20s","2. Acitve user");
+ }
+
+ //User Mini Statement
+
+ void miniStatement(){
+
+      clrscr();
+   printf("\033[1;36m");
+   newLine(3);
+   printf("%49.20s","Mini Statement\n");
+  lineDesigne();
+   printf("\033[1;37m");
+   printf("%18s","Transactions");
+
+ }
